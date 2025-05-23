@@ -48,6 +48,7 @@ form .display input{
     font-size: 45px;
     box-shadow: none;
     background: transparent;
+    color: whitesmoke;
 }
 
 .equal-btn{
