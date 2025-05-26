@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Poppins&family=Prociono&family=Sahitya:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
     <title>Portfolio</title>
@@ -23,7 +25,7 @@
     </header>
 
     <section class="desc">
-        <p>Hello! I'm <span id="name">Anusha</span> Jain</p>
+        <p class="desc-con">Hello! I'm <span id="name">Anusha</span> Jain</p>
         <p id="content">CSE Student at Ahmedabad University, <br>
             Full Stack Developer</p>
         <img id="img-con" src="main image.png">
@@ -58,45 +60,128 @@
     </section>
 
     <section class="skills" id="skill">
-        <h2 id="skill-head">Skills</h2>
-        <div class="skill-container">
-            <button class="btn-mv">
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                    <path d="M22 14L14 22M14 22L22 30M14 22L30 22M2 22C2 10.9543 10.9543 2 22 2C33.0457 2 42 10.9543 42 22C42 33.0457 33.0457 42 22 42C10.9543 42 2 33.0457 2 22Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-            <div id="sk">
-                <img src="html.png">
-                <p>HTML</p>
+      <p id="skill-head">Skills</p>
+      <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+          <div class="carousel-inner"><!--The Carousel Container-->
+
+            <div class="carousel-item carousel-item-1 active"><!--The Carousel item 1-->
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <div class="col">
+                      <div class="card shadow-sm mx-8 my-5">
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" role="img">
+                              <image href="html.png" height="100%" width="100%" />
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">HTML</p>
+                            <div class="d-flex justify-content-between align-items-center"></div>
+                          </div>
+                        </div>
+                  </div>
+                  
+                  <div class="col">
+                      <div class="card shadow-sm mx-8 my-5">
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+                              <image href="css.png" height="100%" width="100%" />
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">CSS</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group"></div>
+                            </div>
+                          </div>
+                        </div><!--[end of card]-->
+                  </div>
+                  
+                  <div class="col">
+                      <div class="card shadow-sm mx-8 my-5">
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+                              <image href="javascript.png" height="100%" width="100%" />
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">Javascript</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group"></div>
+                            </div>
+                          </div>
+                        </div><!--[end of card]-->
+                  </div>
+              </div><!--[End of Carousel Item 1]-->
             </div>
-            <div id="sk">
-                <img src="css.png">
-                <p>CSS</p>
-            </div>
-            <div id="sk">
-                <img src="javascript.png" style=" transform: scale(2); position: relative; top: 4.2rem;">
-                <p style="
-            position: relative;
-            color: #FFF;
-            text-align: center;
-            font-size: 2.3125rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            top: 8.3rem;
-            left: 1rem;">JavaScript</p>
-            </div>
-            <button class="btn-mv">
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                    <path d="M22 30L30 22M30 22L22 14M30 22H14M42 22C42 33.0457 33.0457 42 22 42C10.9543 42 2 33.0457 2 22C2 10.9543 10.9543 2 22 2C33.0457 2 42 10.9543 42 22Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </div>
-    </section>
+
+            <!-- Carousel Item 2 -->
+            <div class="carousel-item carousel-item-2">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <div class="col">
+                      <div class="card shadow-sm mx-8 my-5">
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+                              <image href="" height="100%" width="100%" />
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">MySQL</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group"></div>
+                            </div>
+                          </div>
+                        </div><!--[end of card]-->
+                  </div>
+
+                  <div class="col">
+                      <div class="card shadow-sm mx-8 my-5">
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+                              <image href="" height="100%" width="100%" />
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">React JS</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group"></div>
+                            </div>
+                          </div>
+                        </div><!--[end of card]-->
+                  </div>
+    
+                  <div class="col">
+                      <div class="card shadow-sm mx-8 my-5">
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+                              <image href="" height="100%" width="100%" />
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">Java</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group"></div>
+                            </div>
+                          </div>
+                        </div><!--[end of card]-->
+                  </div>
+              </div>
+          </div> <!--[carousel-item-2]-->
+        </div><!--[End of Container]-->
+
+        <div class="control-btn">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+      </div>
+  </section> 
+
+
     <section class="projects">
         
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="portfolio.js"></script>
 </body>
 </html>

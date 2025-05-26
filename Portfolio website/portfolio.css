@@ -3,9 +3,13 @@
     padding: 0;
     margin: 0;
     background-color: #000000;
-    width: 100%;
-    overflow-x: hidden;
     box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #000000;
 }
 
 .navbar{
@@ -48,14 +52,14 @@ a:hover{
 }
 
 .desc{
-    width: 35.75rem;
-    margin-top: 8rem;
-    margin-left: 8rem;
+    padding-top: 5%;
+    padding-left: 5%;
     flex-shrink: 0;
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "Prociono", serif;
     font-size: 5rem;
+    max-height: min-content;
 }
 
 #name{
@@ -63,31 +67,34 @@ a:hover{
     font-family: "Prociono", serif;
 }
 
+.desc-con{
+    max-width: 40%;
+}
+
 #content{
     color: #E5E5E5;
     font-family: "Alegreya Sans", serif;
     font-size: 1.5rem;
-    padding-top: 0.5rem;
 }
 
 #img-con{
-    position: absolute;
-    width: 38rem;
+     position: relative;
+    width: 35rem;
     height: 35rem;
-    top: 5rem;
-    left:47rem;
-    transition: scale(1.1);
+    top: -5em;
+    left: 47rem;
 }
 
 #resume{
-    margin-top: 1rem;
     width: 9.75rem;
     height: 2.9375rem;
     border-radius: 5.25rem;
     border: 4px solid #CC365A;
     background: rgba(217, 217, 217, 0.00);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    position: absolute;
+    position: relative;
+    top:-12rem;
+    left: -36rem;
 }
 
 #btn-con{
@@ -95,7 +102,8 @@ a:hover{
     font-family: "Alegreya Sans", serif;
     font-size: 1rem;
     position: relative;
-    top: -0.45rem;
+    top: -4.25rem;
+    left: 0.75em;
 }
 
 
@@ -107,29 +115,24 @@ a:hover{
     height: 30px;
     justify-content: center;
     position: relative;
-    top: 0.05rem;
-    left: 0.2rem;
+    top: -3.5rem;
     background: transparent;
 }
 
 #btn-down svg {
     stroke: #CC365A;
-    transition: stroke 0.3s ease;
 }
 
-#resume:hover {
-    background-color: #CC365A;
-    border: 4px solid black;
-}
-
-#resume:hover {
-    background-color: #CC365A;
+#resume:hover{
+    background-color: #CC365A; 
 }
 
 #resume:hover #btn-con {
     color: black;
     background-color: #CC365A;
-    margin-left: 30px;
+    font-weight: 500;
+    position: relative;
+    left: 25px;
 }
 
 #resume:hover #btn-down svg {
@@ -137,7 +140,7 @@ a:hover{
 }
 
 .about{
-    margin-top: 12rem;
+    margin-top: -28rem;
 }
 
 .box{
@@ -149,7 +152,6 @@ a:hover{
     border-color: #CC365A;
     position: relative;
 }
-
 
 #img-about {
     width: 25.58163rem;
@@ -208,9 +210,9 @@ a:hover{
     border: 4px solid #CC365A;
     background: rgba(217, 217, 217, 0.00);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    position: absolute;
-    top: 25.5rem;
-    left: 31rem;
+    position: relative;
+    top: -1.5rem;
+    left: 31.5rem;
     background-color: #F8EDEB;
 }
 
@@ -256,6 +258,7 @@ a:hover{
 
 .skills{ 
     position: relative;
+    top: -5.5rem;
 }
 
 #skill-head{
@@ -266,39 +269,74 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
 }
 
-.skill-container{
-    display: inline-flex;
+ #carouselExampleCaptions {
+    margin: auto;
+    width: 88%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    height: 22rem;
-    margin-top: 2rem;
 }
 
-.btn-mv{
-    width: 4rem;
-    height: 4rem;
-    border: none; 
+.carousel-inner {
+    width: 100%;
 }
 
-#sk{
-    width: 15rem;
-    height: 20rem;
-    border-radius: 0.625rem;
-    border: 5px solid #CC365A;
-    background: rgba(217, 217, 217, 0.00);
-    
+.carousel-control-next{
+    margin-left: 20px;
+    padding-left: 15rem;
+    color: #CC365A;
+    font-size: 2rem;
 }
 
-.skills p{
-    width: 13.5625rem;
-    height: 2.8125rem;
-    color: #FFF;
+.carousel-control-prev{
+    padding-right: 15rem;
+    color: #CC365A;
+    font-size: 2rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    font-size: 2rem; 
+    color: #CC365A;
+    background: transparent;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: -3rem; 
+}
+
+.carousel-control-next {
+    right: -3rem; 
+}
+
+
+.carousel-item .card {
+    height: 20em;
+    height: fit-content;
+    border-color: #CC365A;
+    border-radius: 2%;
+    border-width: 3px;
+    z-index: 2;
+}
+
+.card-text{
+    max-width: 200px;
     text-align: center;
-    font-family: "Alegreya Sans";
-    font-size: 2.3125rem;
-    font-weight: 500;
+    position: relative;
+    left: 4rem;
+    color: #FFF;
+    font-family: "Alegreya Sans", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 
