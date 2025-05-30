@@ -8,6 +8,7 @@ const items = [
     itemName: "Matte Pressed Powder",
     description: "soft-matte powder",
     price: 1200,
+    link: "",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const items = [
     itemName: "Nude Lipstick",
     description: "hydrated shine",
     price: 200,
+    link: "",
   },
   {
     id: 3,
@@ -24,30 +26,34 @@ const items = [
     itemName: "Cheeky Mood",
     description: "hydrated blush",
     price: 1000,
+    link: "",
   },
   {
     id: 4,
-    image: "",
+    image: "https://www.lakmeindia.com/cdn/shop/files/29728_S1-8901030984587_1000x.jpg?v=1734506616",
     descBtn: "new",
     itemName: "Highlighter Glow",
     description: "natural finish",
     price: 850,
+    link: "",
   },
   {
     id: 5,
-    image: "",
+    image: "https://www.lakmeindia.com/cdn/shop/files/24894_H-8901030979552_1000x.jpg?v=1709807080",
     descBtn: "hot",
-    itemName: "Lash Mascara",
+    itemName: "Lash Eyeliner",
     description: "length & volume",
     price: 600,
+    link: "",
   },
   {
     id: 6,
-    image: "",
+    image: "https://www.lakmeindia.com/cdn/shop/files/1732271562099_5e5aee11-e2d6-4015-bc78-87b1c91768d1_1000x.jpg?v=1732271567",
     descBtn: "trending",
     itemName: "Makeup Fixer",
     description: "long-lasting spray",
-    price: 400,
+    price: 628,
+    link: "",
   }
 ];
 
@@ -103,9 +109,11 @@ const Latest = () => {
                         />
                         <div className="card-body">
                           <p className="card-text">{item.itemName}</p>
-                          <p>{item.description}</p>
-                          <p><strong>₹{item.price}</strong></p>
+                          <p className='card-para'>{item.description}</p>
+                          <p className='item-price'><strong>₹{item.price}</strong></p>
+                          <a href={item.link} className="view-btn" target="_blank" rel="noopener noreferrer"> View Product</a>
                         </div>
+                        
                       </div>
                     </div>
                   ))}

@@ -7,7 +7,7 @@ main {
     justify-content: center;
     align-items: center;
     position: static;
-    top: -30%;
+    top: -35%;
     padding-left: 10%;
     
 }
@@ -25,7 +25,6 @@ main {
 .latest-head{
     font-family: "Calistoga", serif;
     font-size: 2rem;
-    
 }
 
 .carousel-inner {
@@ -46,6 +45,7 @@ i.fa-arrow-left {
     color: black;
     padding: 10px;
     border-radius: 100%;
+    
 }
 
 .control-btn  {
@@ -66,8 +66,8 @@ i.fa-arrow-left {
 
 i.fa-arrow-right:hover,
 i.fa-arrow-left:hover {
-    background: #FEF2F2;
-    color: black;
+    background: #45363B;
+    color: #FFF;
 }
 
 .carousel-control-next {
@@ -78,12 +78,12 @@ i.fa-arrow-left:hover {
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    border: 2px solid #FEF2F2;
+    border: 2px solid #45363B;
 }
 
 .carousel-indicators .active {
     opacity: 1;
-    background-color:  #FEF2F2;
+    background-color:  #45363B;
 }
 
 .card-img-top {
@@ -97,4 +97,92 @@ i.fa-arrow-left:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.px-2 {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+    max-width: 5rem;
+    position: absolute;
+    right: 1%;
+    margin-top: 1%;
+    background-color: #FEF2F2;
+}
+
+.text-bg-warning {
+    color: #FFF !important;
+    background-color: #45363B !important;
+    font-family: "Alice", serif;
+}
+
+.card-body{
+    font-family: "Alice", serif;
+}
+
+.card-text{
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.card-para{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.item-price{
+    font-size: larger;
+    margin-bottom: 0px;
+}
+
+.control-btn {
+    position: relative;
+    top: -20rem;
+    /* top: -1em; */
+    left: 4em;}
+
+.carousel-control-next {
+    margin: 0em -31.5em;
+}
+
+
+.carousel-control-prev {
+    left: 0;
+    margin: 0 -34em;
+}
+
+.card-body {
+  font-family: "Alice", serif;
+  transition: transform 0.1s ease;
+  position: relative;
+  text-align: center;
+}
+
+.card:hover .card-body {
+  transform: translateY(-20px);
+}
+
+.view-btn {
+  display: none;
+  margin-top: 10px;
+  background-color: #45363B;
+  color: #FEF2F2;
+  text-decoration: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.view-btn:hover {
+  background-color: #45363B;
+}
+
+.card:hover .view-btn {
+  display: inline-block;
 }
