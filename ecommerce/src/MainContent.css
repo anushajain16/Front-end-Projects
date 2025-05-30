@@ -1,0 +1,59 @@
+.new-item {
+    position: relative;
+    top: 3.5rem;
+}
+
+.item-content {
+    position: absolute;
+    margin-left: 3rem;
+    left: 2.5rem;
+    width: 30%;
+    top: 30%;
+}
+
+.item-heading {
+    font-family: "Alice", serif;
+    font-size: 1.5rem;
+    color: #010101;
+}
+
+.item-btn {
+    border: 1px solid white;
+    color: white;
+}
+
+.image{
+    position: relative;
+    padding-top: 5%;
+    top: 50%;
+    width: 50%;
+    height: 20%;
+    left: 45%;
+}
+
+.item-desc{
+    font-family: "Calistoga", serif;
+    font-size: 2.5rem;
+}
+
+.item-para{
+    margin-top: 5%;
+    font-family: "Alice", serif;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+.item-btn{
+    background-color: #45363B;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100px;
+    border-radius: 5px;
+    font-family: "Alice", serif;
+    font-size: 1rem;
+}
+
+.item-btn:hover{
+    background-color: #010101;
+    color: #FEF2F2;
+}
