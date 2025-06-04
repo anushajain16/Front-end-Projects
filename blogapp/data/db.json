@@ -1,0 +1,95 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQybU2QmNu9mo8nVzxS3KKJ4-9S6H4bPg6zCw&sE",
+      "category": "Technology",
+      "title": "The Impact of Technology on the Workplace",
+      "author_name" : "Tracy Wilson",
+      "createdAt" : "June 3, 2025",
+      "content" : "To run the test, you'll be connected to Measurement Lab (M-Lab) and your IP address will be shared with them and processed by them in accordance with their privacy policy. M-Lab conducts the test and publicly publishes all test results to promote Internet research. Published information includes your IP address and test results, but doesn't include any other information about you as an Internet user."
+    },
+    {
+      "id": 2,
+      "image" : "https://www.indiafilings.com/learn/wp-content/uploads/2025/01/Elements-of-Business-Plan.jpg",
+      "category": "Business",
+      "title": "The Impact of Economy on the Nation",
+      "author_name" : "Jason Francisco",
+      "createdAt" : "June 4, 2025",
+      "content" : "A business generally refers to an entity that engages in commercial or industrial activities to earn a profit. It can be a company, organization, or even an individual who is involved in the production or sale of goods and services. Businesses can be structured in various ways, such as sole proprietorships, partnerships, corporations, or limited liability companies"
+    },
+    {
+      "id": 3,
+      "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVEBViiSvvoi1rVR7__v2_3Y08yHkodukjJg&s",
+      "category": "Entertainment",
+      "title": "Effect of Streaming",
+      "author_name" : "Elizabeth Stavin",
+      "createdAt" : "May 5, 2025",
+      "content" : "Entertainment is a form of activity that holds the attention and interest of an audience or gives pleasure and delight. It can be an idea or a task"
+    },
+    {
+      "id": 4,
+      "image" : "https://www.faizanorganisation.com/images/education1.jpeg",
+      "category": "Education",
+      "title": "The Impact of Education on the Nation",
+      "author_name" : "Robert Davidson",
+      "createdAt" : "May 15, 2025",
+      "content" : "Education is fundamental for achieving full human potential, developing an equitable and just society, and promoting national development."
+    },
+    {
+      "id": 5,
+      "image" : "https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2015/12/01/Pictures/_c34102da-9849-11e5-b4f4-1b7a09ed2cea.jpg",
+      "category": "Education",
+      "title": "Education - The key to Success",
+      "author_name" : "James Williamson",
+      "createdAt" : "April 14, 2025",
+      "content" : "Education is the process of acquiring knowledge, skills, values, beliefs, and habits through various forms of learning, including formal and informal instruction."
+    },
+    {
+      "id": 6,
+      "image" : "https://www.coderus.com/wp-content/uploads/fly-images/997224/coderus-media-and-entertainment-technology-trends-2021-576x9999.jpg",
+      "category": "Technology",
+      "title": "Technology at its peak",
+      "author_name" : "Franklin James",
+      "createdAt" : "December 3, 2024",
+      "content" : "To run the test, you'll be connected to Measurement Lab (M-Lab) and your IP address will be shared with them and processed by them in accordance with their privacy policy. M-Lab conducts the test and publicly publishes all test results to promote Internet research. Published information includes your IP address and test results, but doesn't include any other information about you as an Internet user."
+    },
+    
+    {
+      "id": 7,
+      "image" : "https://i0.wp.com/bcomnotes.in/wp-content/uploads/2020/05/business.png?fit=985%2C699&ssl=1",
+      "category": "Business",
+      "title": "The art of making a Business",
+      "author_name" : "Jason Francisco",
+      "createdAt" : "January 4, 2025",
+      "content" : ""
+    },
+    {
+      "id": 8,
+      "image" : "https://www.stockgro.club/blogs/wp-content/uploads/2023/12/media-and-entertainment-industry-1024x516.png",
+      "category": "Entertainment",
+      "title": "Effect of Streaming",
+      "author_name" : "Mark Stonis",
+      "createdAt" : "July 5, 2024",
+      "content" : "Entertainment is a form of activity that holds the attention and interest of an audience or gives pleasure and delight. It can be an idea or a task"
+    },
+    {
+      "id": 9,
+      "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs_SpOljrqlZ1NFOfV5g7W5K8kH7B8R02lTg&s",
+      "category": "Education",
+      "title": "Education System in India",
+      "author_name" : "James Conklin",
+      "createdAt" : "June 16, 2024",
+      "content" : "Education is fundamental for achieving full human potential, developing an equitable and just society, and promoting national development."
+    },
+    {
+      "id": 10,
+      "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp9qwNylwGn5GvlzXzubeVSD2J2LXZ9T64xkeFBUy4HZJiRYF6nPPg1RnSa3jbuVDOJDA&usqp=CAU",
+      "category": "Business",
+      "title": "Growing Business in Today's World",
+      "author_name" : "Jenny Han",
+      "createdAt" : "March 2, 2025",
+      "content" : "Education is the process of acquiring knowledge, skills, values, beliefs, and habits through various forms of learning, including formal and informal instruction."
+    }
+  ]
+}

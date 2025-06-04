@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marck+Script&family=Poetsen+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    overflow-x: hidden;
+}
+
+.latest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.latest-image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+.latest-image {
+  width: 100%;
+  height: 630px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  z-index: 1;
+}
+
+.overlay-card {
+  position: absolute;
+  bottom: -40px; 
+  left: 80px;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  z-index: 3;
+}
+
+.category{
+   width: fit-content;
+   border-radius: 6px;
+   background-color: var(--Theme-1-Primary, #4B6BFB);
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; 
+    margin-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #fff;
+}
+
+.overlay-card h2{
+    min-height: 48px; 
+    font-size: 22px;
+    margin: 8px 0;
+    line-height: 1.3;
+    align-self: stretch;
+    color: var(--Secondary-800, #181A2A);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    line-height: 28px; 
+    margin-top: 10px;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+    color: var(--Secondary-400, #97989F);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    align-items: center;
+}
+
+.post{
+    position: relative;
+    margin-top: 80px;
+}
+
+.post-head{
+    position: relative;
+    left: 15%;
+    margin-bottom: 15px;
+    color: var(--Secondary-800, #181A2A);
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px; 
+}
+
+.btn-view{
+    position: relative;
+    left: 50%;
+    margin-top: 10px;    
+    padding: 12px 20px;
+    gap: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(105, 106, 117, 0.30);
+    color: var(--Secondary-500, #696A75);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+.btn-view:hover{
+    background-color: #555;
+    color: #fff;
+}
+
+.overlay-card:hover{
+    background-color: #F4F4F5;
+    color: #fff;
+}
+

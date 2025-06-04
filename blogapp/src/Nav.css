@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marck+Script&family=Poetsen+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbar {
+    display: flex;
+    padding: 12px 25px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #F4F4F5;
+    position: sticky;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 118px;
+}
+
+.nav-items {
+    display: flex;
+    width: 667px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.nav-items li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    color: #3B3C4A;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Secondary-600, #3B3C4A);
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.searchBar{
+    border-color: transparent;
+    max-width: 180px;
+    height: 25px;
+    color: var(--Secondary-400, #A1A1AA);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100px; 
+    border-radius: 5px;
+    border: transparent;
+}
